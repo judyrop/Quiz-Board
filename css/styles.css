@@ -1,11 +1,16 @@
 #sentence{
   display: none;
   font-style: italic;
+  color:brown;
 }
 .container{
   display: none;
   background-color:lightblue;
 }
 .button{
-  background-color: #00888;
+  color:darkblue;
+}
+h1{
+  background-color:lightblue;
+  text-align: center;
 }
