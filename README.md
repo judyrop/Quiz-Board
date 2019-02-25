@@ -9,10 +9,11 @@ This application contains a test on javascript and other programming languages.I
 * in a simple
 * easy-to-understand
 * format
-BDD
+## BDD
 | Behaviour                                    | Input                                                     | Output                                                                                           |
 |----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | You are provided with questions with choices | Click on the button that contains a correct answer to you | Correct answer 5marks and wrong answer 0marks,percentage is (total marks scored/total marks)*100 |
+
 ## Technologies Used
 I have created this application using HTML,CSS JavaScript and J query.
 ## Support and contact details
