@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
   <body>
-    <h1>Quiz-Board</h1>
-    <p>Write your name and registration in the space provided.</p>
+
+<h1>Quiz-Board</h1>
+<form id="student">
+  <p>Write your name and registration in the space provided.</p>
     <div class="form-group">
       <label for="studentName">Name</label>
       <input type="text" id="studentName" class="form-control">
@@ -17,13 +19,18 @@
       <label for="registration">Registration</label>
       <input type="text" id="registration" class="form-control">
     </div>
-    <h2>Instructions</h2>
-    <p>Read the instructions carefully</p>
-    <ol>
-      <li>Read the questions carefully before providing answers.</li>
-      <li>Answer all the questions</li>
-    </ol>
-    <div id="test">
+    <div class="button">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+    <div id="sentence">
+      <p>Welcome <span class="studentName"></span> <span class="registration"></span> to this section.Answer all questions.success!</p>
+      <button type="submit" name="button" class="test">To the test</button>
+    </div>
+</form>
+ <div class="container">
+
+   <form id="questions">
+
       <form class="radio">
       <li>1.What is Javascript used for?</li><br>
       <label>
@@ -83,8 +90,14 @@
       </label>
       <button type="submit" class="btn">Done</button>
 </form>
-</div>
+</form>
+  </div>
+  <div id="marks">
+    <p>You score is <span class="percent"></span></p>
+  </div>
+</form>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+
   </body>
 </html>
