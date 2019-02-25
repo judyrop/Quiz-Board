@@ -24,3 +24,8 @@ h1{
   height:200px;
   font-size:28;
 }
+.Box-model{
+  padding: 6px;
+  margin: 6px;
+  border: 2px;
+}
