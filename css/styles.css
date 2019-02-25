@@ -3,4 +3,10 @@
 }
 .container{
   display: none;
+  background-color:lightblue;
+}
+# student{
+  font-style: italic;
+  background-position: center;
+  background-color: grey;
 }
