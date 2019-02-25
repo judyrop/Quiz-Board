@@ -1,110 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-      <title>Quiz Board</title>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    </head>
-  <body>
-<div class="Box-model">
-
-
-<h1>Quiz-Board</h1>
-  <form id="student">
-  <p>Write your name and registration in the space provided.</p>
-    <div class="form-group">
-      <label for="studentName">Name</label>
-      <input type="text" id="studentName" class="form-control">
-    </div>
-    <div class="form-group">
-      <label for="registration">Registration</label>
-      <input type="text" id="registration" class="form-control">
-    </div>
-    <div class="button">
-      <button type="submit" class="btn">Submit</button>
-    </div>
-    <div id="sentence">
-      <p>Welcome <span class="studentName"></span> <span class="registration"></span> to this section.Answer all questions.Success!</p>
-      <button type="submit" name="button" class="test">To the test</button>
-    </div>
-</form>
-</div>
- <div class="container">
-
-
-   <form id="questions">
-
-      <form class="radio">
-      <li>1.What is Javascript used for?</li><br>
-      <label>
-      <input type="radio" name="question1" value="05">make webpage interactive<br>
-      <input type="radio" name="question1" value="00">create webpages<br>
-      </label>
-      <li>2. What is the official name of Javascript</li><br>
-      <label>
-      <input type="radio" name="question2" value="00">JS<br>
-      <input type="radio" name="question2" value="05">ECMAScript<br>
-      <input type="radio" name="question2" value="00">jquery<br>
-</label>
-      <li>3. Which one of the following evaluates whether or not two sides are equal</li><br>
-      <label>
-      <input type="radio" name="question3" value="00">==<br>
-      <input type="radio" name="question3" value="00">=<br>
-      <input type="radio" name="question3" value="05">===<br>
-      </label>
-      <li>4.We learned string methods, which one searches for a character in a string.</li><br>
-<label>
-      <input type="radio" name="question4" value="00">.concat <br>
-      <input type="radio" name="question4" value="00">toSearch <br>
-      <input type="radio" name="question4" value="00">.slice <br>
-      <input type="radio" name="question4" value="05">charAt <br>
-      </label>
-      <li>5.Which one of the following is the correct format in which arrays are written?</li> <br>
-<label>
-      <input type="radio" name="question5" value="05">var mon=['3','4','5']<br>
-      <input type="radio" name="question5" value="00">var mon={3,4,5} <br>
-      <input type="radio" name="question5" value="00">var mon="3","4","5" <br>
-      </label>
-      <li>6.Give the operator that returns remainder</li><br>
-<label>
-      <input type="radio" name="question6" value="00">&& <br>
-      <input type="radio" name="question6" value="00">|| <br>
-      <input type="radio" name="question6" value="05">% <br>
-      </label>
-      <li>7.The code that handles arithmetic is the front-end.</li> <br>
-<label>
-      <input type="radio" name="question7" value="00">True <br>
-        <input type="radio" name="question7" value="05">False <br>
-        </label>
-      <li>8.Which one of the following do we use to convert string into decimal number?</li> <br>
-<label>
-      <input type="radio" name="question8" value="00"> parseInt <br>
-      <input type="radio" name="question8" value="05"> parseFloat <br>
-      </label>
-      <div class="sidebar">
-          <div id="percentage"></div>
-          </div>
-      <li>9.Choose list that contains functions.</li> <br>
-<label>
-      <input type="radio" name="question9" value="05"> alert() prompt() confirm() <br>
-      <input type="radio" name="question9" value="00"> .concat .toUpperCase .toLowerCase <br>
-      </label>
-      <li>10.Numbers, strings, booleans, undefined, null are datatypes.</li> <br>
-<label>
-      <input type="radio" name="question10" value="05"> True <br>
-      <input type="radio" name="question10" value="00"> False <br>
-      </label>
-      <input type="submit" value="Done">
-</form>
-</form>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quiz Board</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="Box-model">
+    <h1>Quiz-Board</h1>
+    <form id="student" name="student">
+      <p>Write your name and registration in the space provided.</p>
+      <div class="form-group">
+        <label for="studentName">Name</label> <input class="form-control" id="studentName" type="text">
+      </div>
+      <div class="form-group">
+        <label for="registration">Registration</label> <input class="form-control" id="registration" type="text">
+      </div>
+      <div class="button">
+        <button class="btn" type="submit">Submit</button>
+      </div>
+      <div id="sentence">
+        <p>Welcome <span class="studentName"></span> <span class="registration"></span> to this section.Answer all questions.Success!</p><button class="test" name="button" type="submit">To the test</button>
+      </div>
+    </form>
   </div>
-
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-
-  </body>
+  <div class="container">
+    <form id="questions" name="questions">
+      <form class="radio">
+        <ul>
+          <li>1.What is Javascript used for?</li>
+          <li style="list-style: none"><br>
+          <label><input name="question1" type="radio" value="05">make webpage interactive<br>
+          <input name="question1" type="radio" value="00">create webpages<br></label></li>
+          <li>2. What is the official name of Javascript</li>
+          <li style="list-style: none"><br>
+          <label><input name="question2" type="radio" value="00">JS<br>
+          <input name="question2" type="radio" value="05">ECMAScript<br>
+          <input name="question2" type="radio" value="00">jquery<br></label></li>
+          <li>3. Which one of the following evaluates whether or not two sides are equal</li>
+          <li style="list-style: none"><br>
+          <label><input name="question3" type="radio" value="00">==<br>
+          <input name="question3" type="radio" value="00">=<br>
+          <input name="question3" type="radio" value="05">===<br></label></li>
+          <li>4.We learned string methods, which one searches for a character in a string.</li>
+          <li style="list-style: none"><br>
+          <label><input name="question4" type="radio" value="00">.concat<br>
+          <input name="question4" type="radio" value="00">toSearch<br>
+          <input name="question4" type="radio" value="00">.slice<br>
+          <input name="question4" type="radio" value="05">charAt<br></label></li>
+          <li>5.Which one of the following is the correct format in which arrays are written?</li>
+          <li style="list-style: none"><br>
+          <label><input name="question5" type="radio" value="05">var mon=['3','4','5']<br>
+          <input name="question5" type="radio" value="00">var mon={3,4,5}<br>
+          <input name="question5" type="radio" value="00">var mon="3","4","5"<br></label></li>
+          <li>6.Give the operator that returns remainder</li>
+          <li style="list-style: none"><br>
+          <label><input name="question6" type="radio" value="00">&&<br>
+          <input name="question6" type="radio" value="00">||<br>
+          <input name="question6" type="radio" value="05">%<br></label></li>
+          <li>7.The code that handles arithmetic is the front-end.</li>
+          <li style="list-style: none"><br>
+          <label><input name="question7" type="radio" value="00">True<br>
+          <input name="question7" type="radio" value="05">False<br></label></li>
+          <li>8.Which one of the following do we use to convert string into decimal number?</li>
+          <li style="list-style: none">
+            <br>
+            <label><input name="question8" type="radio" value="00"> parseInt<br>
+            <input name="question8" type="radio" value="05"> parseFloat<br></label>
+            <div class="sidebar">
+              <div id="percentage"></div>
+            </div>
+          </li>
+          <li>9.Choose list that contains functions.</li>
+          <li style="list-style: none"><br>
+          <label><input name="question9" type="radio" value="05"> alert() prompt() confirm()<br>
+          <input name="question9" type="radio" value="00"> .concat .toUpperCase .toLowerCase<br></label></li>
+          <li>10.Numbers, strings, booleans, undefined, null are datatypes.</li>
+          <li style="list-style: none"><br>
+          <label><input name="question10" type="radio" value="05"> True<br>
+          <input name="question10" type="radio" value="00"> False<br></label> <input type="submit" value="Done"></li>
+        </ul>
+      </form>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+</body>
 </html>
