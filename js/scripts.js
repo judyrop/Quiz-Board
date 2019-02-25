@@ -28,7 +28,8 @@ $("form#questions").submit(function(event){
   var question8 =parseInt($("input:radio[name=question8]:checked").val());
   var question9 =parseInt($("input:radio[name=question9]:checked").val());
   var question10 =parseInt($("input:radio[name=question10]:checked").val());
-  var total=(question1+question2+question3+question4+question5+question6+question7+question8+question9+question10);
-var percent=((total/50)*100);
+     var total=(question1+question2+question3+question4+question5+question6+question7+question8+question9+question10);
+     var percent=((total/50)*100);
+       $("#percentage").text("You score is:" +percent+"%");
   });
 });

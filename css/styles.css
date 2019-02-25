@@ -1,12 +1,11 @@
 #sentence{
   display: none;
+  font-style: italic;
 }
 .container{
   display: none;
   background-color:lightblue;
 }
-# student{
-  font-style: italic;
-  background-position: center;
-  background-color: grey;
+.button{
+  background-color: #00888;
 }
