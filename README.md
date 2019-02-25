@@ -9,7 +9,12 @@ This application contains a test on javascript and other programming languages.I
 * in a simple
 * easy-to-understand
 * format
-You simply open the page key in your details and move to the page of the test then answer questions by chosing from the choices given when done submit by clicking on the button "Done".
+BDD
+| Behaviour                                    | Input                                                     | Output                                                                                                   |
+|----------------------------------------------|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| You are provided with questions with choices | Click on the button that contains a correct answer to you | Every correct answer is 5mks and 0 for wrong answer.The percentage is calculated and is shown on screen. |
+
+You simply open the page key in your details and move to the page of the test then answer questions by choosing from the choices given when done submit by clicking on the button "Done".
 ## Technologies Used
 I have created this application using HTML,CSS JavaScript and J query.
 ## Support and contact details
