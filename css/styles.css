@@ -18,3 +18,9 @@ h1{
   background-color:violet;
   font-weight: bold;
 }
+.sidebar{
+  float: right;
+  width: 200px;
+  height:200px;
+  font-size:28;
+}
